@@ -1,0 +1,2 @@
+export function filterProducts(items,category='all'){return category==='all'?items:items.filter(item=>item.category===category)}
+export function searchProducts(items,query){const q=query.trim().toLowerCase();return q?items.filter(x=>x.name.toLowerCase().includes(q)):items}

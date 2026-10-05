@@ -1,0 +1,1 @@
+const key='chronos-theme';export function toggle(){document.documentElement.classList.toggle('dark-mode');localStorage.setItem(key,document.documentElement.classList.contains('dark-mode')?'dark':'light')}export function load(){if(localStorage.getItem(key)==='dark')document.documentElement.classList.add('dark-mode')}

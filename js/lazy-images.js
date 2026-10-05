@@ -1,0 +1,1 @@
+export function lazyImages(){document.querySelectorAll('img[data-src]').forEach(img=>{img.src=img.dataset.src;img.removeAttribute('data-src')})}

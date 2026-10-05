@@ -1,0 +1,1 @@
+export function track(event,data={}){console.info('[Chronos event]',event,data)}

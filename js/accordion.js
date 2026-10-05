@@ -1,0 +1,1 @@
+export function setupAccordion(selector='.faq-item'){document.querySelectorAll(selector).forEach(item=>item.addEventListener('click',()=>item.classList.toggle('open')))}

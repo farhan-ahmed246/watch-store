@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Chronos — premium watches crafted for timeless style.">
+<title>CHRONOS — Premium Watch Store</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="announcement">FREE SHIPPING ON ORDERS OVER $150 <span>•</span> 2-YEAR WARRANTY</div>
+<header class="header">
+  <a class="logo" href="#">CHRONOS<span>.</span></a>
+  <nav><a href="#shop">Shop</a><a href="#collections">Collections</a><a href="#story">Our Story</a><a href="#contact">Contact</a></nav>
+  <div class="actions"><button id="searchBtn" aria-label="Search">⌕</button><button id="cartBtn" aria-label="Cart">Bag <b id="cartCount">0</b></button><button class="menu" id="menuBtn">☰</button></div>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-copy"><p class="eyebrow">THE ART OF TIME</p><h1>Time,<br><em>redefined.</em></h1><p class="hero-text">Precision engineering meets quiet luxury. Discover watches designed to become part of your story.</p><a class="btn light" href="#shop">Explore Collection <span>→</span></a></div>
+  <div class="hero-watch"><div class="watch-glow"></div><img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=1000&q=85" alt="Luxury gold watch"></div>
+</section>
+<section class="marquee"><span>SWISS INSPIRED</span><i>✦</i><span>TIMELESS DESIGN</span><i>✦</i><span>PRECISION CRAFT</span><i>✦</i><span>BUILT TO LAST</span><i>✦</i></section>
+<section id="collections" class="intro section"><div><p class="eyebrow">OUR COLLECTIONS</p><h2>Made for every<br><em>moment.</em></h2></div><p>From boardroom confidence to weekend escape, every Chronos piece balances considered details with effortless wearability.</p></section>
+<section id="shop" class="shop section">
+  <div class="shop-head"><div><p class="eyebrow">THE COLLECTION</p><h2>Signature watches</h2></div><div class="filters"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="classic">Classic</button><button class="filter" data-filter="sport">Sport</button><button class="filter" data-filter="minimal">Minimal</button></div></div>
+  <div class="products" id="products"></div>
+</section>
+<section id="story" class="story section"><div class="story-image"><img src="https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?auto=format&fit=crop&w=1200&q=85" alt="Watchmaker crafting a timepiece"></div><div class="story-copy"><p class="eyebrow">THE CHRONOS PHILOSOPHY</p><h2>Less noise.<br><em>More meaning.</em></h2><p>We believe a great watch should never compete for attention. It should earn it. Chronos combines enduring silhouettes, reliable movements and tactile materials into pieces you will reach for year after year.</p><a href="#contact" class="text-link">Discover our story <span>→</span></a></div></section>
+<section class="feature section"><div><p class="eyebrow">CRAFTED WITH INTENT</p><h2>Details make<br><em>the difference.</em></h2></div><div class="feature-grid"><div><strong>01</strong><h3>Sapphire crystal</h3><p>Exceptional scratch resistance keeps every dial clear and luminous.</p></div><div><strong>02</strong><h3>316L steel</h3><p>Marine-grade stainless steel selected for strength and everyday comfort.</p></div><div><strong>03</strong><h3>5 ATM water resistance</h3><p>Built for real life, from morning rain to spontaneous weekends away.</p></div></div></section>
+<section class="newsletter section"><p class="eyebrow">STAY IN THE LOOP</p><h2>Good things take<br><em>time.</em></h2><p>New releases, stories and private access — delivered occasionally.</p><form id="newsletter"><input type="email" placeholder="Your email address" required><button class="btn dark">Subscribe</button></form></section>
+</main>
+<footer id="contact"><div class="footer-top"><a class="logo" href="#">CHRONOS<span>.</span></a><div><p class="eyebrow">CONTACT</p><a href="mailto:hello@chronos.example">hello@chronos.example</a><p>Mon–Fri, 9am–6pm</p></div><div><p class="eyebrow">FOLLOW</p><a href="#">Instagram</a><a href="#">Pinterest</a></div><div><p class="eyebrow">STORE</p><p>Worldwide shipping</p><p>Free returns within 30 days</p></div></div><div class="footer-bottom"><span>© 2026 Chronos Watches</span><span>Privacy · Terms</span></div></footer>
+<div class="overlay" id="overlay"></div>
+<aside class="cart-panel" id="cartPanel"><div class="panel-head"><h3>Your bag</h3><button id="closeCart">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-bottom"><div><span>Subtotal</span><strong id="cartTotal">$0</strong></div><button class="btn dark full" id="checkout">Checkout <span>→</span></button><small>Taxes and shipping calculated at checkout.</small></div></aside>
+<div class="search-modal" id="searchModal"><button id="closeSearch">×</button><div><p class="eyebrow">SEARCH CHRONOS</p><input id="searchInput" type="search" placeholder="Search watches..."><p id="searchHint">Try “classic”, “sport”, or a product name.</p></div></div>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body></html>

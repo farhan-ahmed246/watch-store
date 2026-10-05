@@ -1,0 +1,1 @@
+export const storage={get(k,fallback=[]){try{return JSON.parse(localStorage.getItem(k))??fallback}catch{return fallback}},set(k,v){localStorage.setItem(k,JSON.stringify(v))},remove(k){localStorage.removeItem(k)}};
